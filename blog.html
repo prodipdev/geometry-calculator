@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Geometry Genius Blogs</title>
+    <!-- daisyUI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-sky-50 shadow-md px-5 sm:px-10">
+                <div class="flex-1">
+                    <a class="text-2xl sm:text-3xl font-bold">Interactive <span
+                            class="block font-normal text-xl sm:text-2xl">Geometry
+                            Genius Blogs</span></a>
+                </div>
+                <div class="navbar-end">
+                    <a href="index.html" class="btn btn-primary text-white font-bold rounded-full px-3">Calculator</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grid sm:grid-cols-2 gap-5 mt-14 mb-10 px-5 sm:px-10">
+            <div class="bg-gray-100 p-3 rounded-lg">
+                <p class=" text-xl font-semibold border-b-4 pb-1 mb-3">
+                    1. What is DOM and why do we use it?
+                </p>
+                <p>DOM stands for Document Object Model, and it is a programming interface for web documents.
+                    <br>
+                    The DOM allows JavaScript to dynamically update the content and structure of a web page, without
+                    requiring a page reload. This enables developers to create interactive and responsive web
+                    applications that can provide a better user experience.
+                </p>
+            </div>
+            <div class="bg-gray-100 p-3 rounded-lg">
+                <p class=" text-xl font-semibold border-b-4 pb-1 mb-3">
+                    2. How to select the elements from DOM?
+                </p>
+                <p class="font-semibold mb-1">There are several ways to do this e.g:</p>
+                <p><span class="text-red-500 font-semibold">getElementById</span> : This method get the specific HTML
+                    element with id="" attribute.</p>
+                <p><span class="text-red-500 font-semibold">getElementsByClassName</span> : This method get the specific
+                    HTML element with class="" attribute.</p>
+                <p><span class="text-red-500 font-semibold">getElementsByTagName</span> : This method get collection of
+                    HTML elements with specified tag name.</p>
+                <p><span class="text-red-500 font-semibold">querySelector</span> : This method get the first HTML
+                    element that matches specified CSS attribute.</p>
+                <p><span class="text-red-500 font-semibold">querySelectorAll</span> : This method get the collection of
+                    HTML elements that matches specified CSS attribute.</p>
+
+            </div>
+            <div class="bg-gray-100 p-3 rounded-lg">
+                <p class=" text-xl font-semibold border-b-4 pb-1 mb-3">
+                    3. What is event bubble?
+                </p>
+                <p>Event bubbling is when an event triggered on an element is passed up to its ancestor elements until
+                    it reaches the root element. It allows for efficient event handling on multiple elements, but can
+                    cause unintended triggering of events.
+                </p>
+            </div>
+            <div class="bg-gray-100 p-3 rounded-lg">
+                <p class=" text-xl font-semibold border-b-4 pb-1 mb-3">
+                    4. What is the callback function and why we use it?
+                </p>
+                <p>A callback function is a function that is passed as an argument to another function and is intended
+                    to be called by that function at a later time. <br>
+                    This callback function used for asynchronous programming, event handling, modularity and reuse etc.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
