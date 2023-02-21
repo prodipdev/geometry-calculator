@@ -7,9 +7,15 @@ function getElementText(targetId) {
 }
 
 // get first input value in card items
-function getFirstInputValue(target) {
-    const inputValueStr = target.parentElement.children[2].children[0];
+function getFirstInputValue(targetId) {
+    const inputValueStr = targetId.parentElement.children[2].children[0];
     const inputValue = parseFloat(inputValueStr.value);
+    // check input field validation and return condition
+    const validInput = inputValidation(inputValue);
+    if (validInput === "invalid") {
+        inputValueStr.value = '';
+        return "invalidValue";
+    };
     return inputValue;
 }
 
@@ -17,21 +23,24 @@ function getFirstInputValue(target) {
 function getSecondInputValue(targetId) {
     const inputValueStr = targetId.parentElement.children[2].children[2];
     const inputValue = parseFloat(inputValueStr.value);
+    // check input field validation and return condition
+    const validInput = inputValidation(inputValue);
+    if (validInput === "invalid") {
+        inputValueStr.value = '';
+        return "invalidValue";
+    }
     return inputValue;
 }
 
 // input field validations
-function inputValidation(targetId) {
-    const inputOne = getFirstInputValue(targetId);
-    const inputTwo = getSecondInputValue(targetId);
-
-    if (!inputOne || !inputTwo) {
+function inputValidation(value) {
+    if (!value) {
         toastMsg("Enter valid value!")
-        return false;
+        return "invalid";
     }
-    if (isNaN(inputOne) || isNaN(inputTwo) || inputOne < 0 || inputTwo < 0) {
+    if (isNaN(value) || value < 0) {
         toastMsg("Don't enter negative value!")
-        return false;
+        return "invalid";
     }
 }
 

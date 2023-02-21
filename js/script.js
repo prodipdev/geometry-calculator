@@ -1,97 +1,97 @@
 // Triangle Calculation
 document.getElementById("triangle-btn").addEventListener('click', function () {
-    // check input validation [utilities:21]
-    const validInput = inputValidation(this);
-    if (validInput === false) {
-        return;
-    }
-    // get input value and calculation [utilities:8/14]
+    // get input value [utilities:10/23]
     const bValue = getFirstInputValue(this);
     const hValue = getSecondInputValue(this);
+    // Check input value condition
+    if (bValue === "invalidValue" || hValue === "invalidValue") {
+        return;
+    }
+    // input value calculation
     const triangleArea = 0.5 * bValue * hValue;
-    // set calculation value in html field [utilities:36]
+    // set calculation value in html field [utilities:48]
     setCalculationValue(this, triangleArea);
 })
 
 
 // Rectangle Calculation
 document.getElementById("rectangle-btn").addEventListener('click', function () {
-    // check input validation [utilities:21]
-    const validInput = inputValidation(this);
-    if (validInput === false) {
-        return;
-    }
-    // get input value and calculation [utilities:8/14]
+    // get input value and calculation [utilities:10/23]
     const wValue = getFirstInputValue(this);
     const iValue = getSecondInputValue(this);
+    // Check input value condition
+    if (wValue === "invalidValue" || iValue === "invalidValue") {
+        return;
+    }
+    // input value calculation
     const triangleArea = wValue * iValue;
     console.log(wValue, iValue, triangleArea)
-    // set calculation value in html field [utilities:36]
+    // set calculation value in html field [utilities:48]
     setCalculationValue(this, triangleArea);
 })
 
 
 // Parallelogram Calculation
 document.getElementById("parallelogram-btn").addEventListener('click', function () {
-    // check input validation [utilities:21]
-    const validInput = inputValidation(this);
-    if (validInput === false) {
-        return;
-    }
-    // get input value and calculation [utilities:8/14]
+    // get input value and calculation [utilities:10/23]
     const bValue = getFirstInputValue(this);
     const hValue = getSecondInputValue(this);
+    // Check input value condition
+    if (bValue === "invalidValue" || hValue === "invalidValue") {
+        return;
+    }
+    // input value calculation
     const triangleArea = bValue * hValue;
-    // set calculation value in html field [utilities:36]
+    // set calculation value in html field [utilities:48]
     setCalculationValue(this, triangleArea);
 })
 
 
 // Rhombus Calculation
 document.getElementById("rhombus-btn").addEventListener('click', function () {
-    // check input validation [utilities:21]
-    const validInput = inputValidation(this);
-    if (validInput === false) {
-        return;
-    }
-    // get input value and calculation [utilities:8/14]
+    // get input value and calculation [utilities:10/23]
     const d1Value = getFirstInputValue(this);
     const d2Value = getSecondInputValue(this);
+    // Check input value condition
+    if (d1Value === "invalidValue" || d2Value === "invalidValue") {
+        return;
+    }
+    // input value calculation
     const triangleArea = 0.5 * d1Value * d2Value;
-    // set calculation value in html field [utilities:36]
+    // set calculation value in html field [utilities:48]
     setCalculationValue(this, triangleArea);
 })
 
 
 // Pentagon Calculation
 document.getElementById("pentagon-btn").addEventListener('click', function () {
-    // check input validation [utilities:21]
-    const validInput = inputValidation(this);
-    if (validInput === false) {
-        return;
-    }
-    // get input value and calculation [utilities:8/14]
+    // get input value and calculation [utilities:10/23]
     const pValue = getFirstInputValue(this);
     const bValue = getSecondInputValue(this);
+    // Check input value condition
+    if (pValue === "invalidValue" || bValue === "invalidValue") {
+        return;
+    }
+    // input value calculation
     const triangleArea = 0.5 * pValue * bValue;
-    // set calculation value in html field [utilities:36]
+    // set calculation value in html field [utilities:48]
     setCalculationValue(this, triangleArea);
 })
 
 
 // Ellipse Calculation
 document.getElementById("ellipse-btn").addEventListener('click', function () {
-    // check input validation [utilities:21]
-    const validInput = inputValidation(this);
-    if (validInput === false) {
-        return;
-    }
-    // get input value and calculation [utilities:8/14]
+    // get input value and calculation [utilities:10/23]
     const bValue = getFirstInputValue(this);
     const hValue = getSecondInputValue(this);
+    // Check input value condition
+    if (bValue === "invalidValue" || hValue === "invalidValue") {
+        return;
+    }
+    // input value calculation
     const pi = 3.14;
     const triangleArea = pi * bValue * hValue;
-    // set calculation value in html field [utilities:36]
+    // set calculation value in html field [utilities:48]
     setCalculationValue(this, triangleArea);
 })
 
